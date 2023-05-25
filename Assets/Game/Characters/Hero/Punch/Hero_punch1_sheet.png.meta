@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d4a3dfaa7ac79ca4ba0d0578b3fcfce1
+guid: 2a48d1088123eee4497affbcc4edb305
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -105,7 +105,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Hero_kick_sheet_0
+      name: Hero_punch1_sheet_0
       rect:
         serializedVersion: 2
         x: 0
@@ -119,14 +119,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9b6c9a7c518105f48b2b71624c779ae2
-      internalID: -1314847956
+      spriteID: ab9a999453de4ec4397394f9f02b88d3
+      internalID: -49488409
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hero_kick_sheet_1
+      name: Hero_punch1_sheet_1
       rect:
         serializedVersion: 2
         x: 256
@@ -140,14 +140,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 61e1f6a24a8fa1347ac8e2e10ac583d9
-      internalID: -1683584271
+      spriteID: 52564e44cd264054fbece13a3f01b98b
+      internalID: 2111408285
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hero_kick_sheet_2
+      name: Hero_punch1_sheet_2
       rect:
         serializedVersion: 2
         x: 512
@@ -161,14 +161,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3b96a306796fbbd4bb330893de4d7861
-      internalID: 1738973202
+      spriteID: 714014b10b2df3c42b6c1d9f406ef626
+      internalID: -1333427443
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hero_kick_sheet_3
+      name: Hero_punch1_sheet_3
       rect:
         serializedVersion: 2
         x: 768
@@ -182,14 +182,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b76f310c99dbebb4a9a3cfb70e4448b1
-      internalID: -575289340
+      spriteID: 9bda7403b4445d341ba7046c27949296
+      internalID: 637451465
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hero_kick_sheet_4
+      name: Hero_punch1_sheet_4
       rect:
         serializedVersion: 2
         x: 1024
@@ -203,14 +203,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 82115d9f1c698be42bc5ffc68212bee2
-      internalID: 1662990323
+      spriteID: 63631c6d5f50e284d9345be5cfffffe0
+      internalID: -440911018
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hero_kick_sheet_5
+      name: Hero_punch1_sheet_5
       rect:
         serializedVersion: 2
         x: 1280
@@ -224,14 +224,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7f1eee80c2259fd46a1b5279a76274ed
-      internalID: -54285373
+      spriteID: ffa1dcc736944d34c807430573880de9
+      internalID: 282657435
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hero_kick_sheet_6
+      name: Hero_punch1_sheet_6
       rect:
         serializedVersion: 2
         x: 0
@@ -245,14 +245,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ac49afe804ae5c64eb0600b56386f21b
-      internalID: -1254138782
+      spriteID: b07a591f5b7e1104c9cd113454267b3d
+      internalID: -461223341
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hero_kick_sheet_7
+      name: Hero_punch1_sheet_7
       rect:
         serializedVersion: 2
         x: 256
@@ -266,14 +266,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c77b2910d344d744f8eca643213abc9f
-      internalID: 141083416
+      spriteID: 6fe2918218387c34a921cd9f1503d334
+      internalID: 895610372
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hero_kick_sheet_8
+      name: Hero_punch1_sheet_8
       rect:
         serializedVersion: 2
         x: 512
@@ -287,14 +287,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8fe2f116249989a489be6629773c84d7
-      internalID: -1587789963
+      spriteID: 4c759dd07f7e8514086dd766f31408a6
+      internalID: 1479248452
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hero_kick_sheet_9
+      name: Hero_punch1_sheet_9
       rect:
         serializedVersion: 2
         x: 768
@@ -308,14 +308,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d02a926509a0c95489fe43783ed2aac8
-      internalID: -202983622
+      spriteID: 3db068779f61ad941be03d909bcadf2f
+      internalID: 873258274
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hero_kick_sheet_10
+      name: Hero_punch1_sheet_10
       rect:
         serializedVersion: 2
         x: 1024
@@ -329,14 +329,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 396a907e9316f584db3d6125f51ffa04
-      internalID: -638748784
+      spriteID: 9c9ed0cea03b0dc42a056f20adfe7087
+      internalID: -2012446713
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hero_kick_sheet_11
+      name: Hero_punch1_sheet_11
       rect:
         serializedVersion: 2
         x: 1280
@@ -350,14 +350,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f5eda0755757b474ab6ab28604d9c5ba
-      internalID: 1451495172
+      spriteID: 7c04f2beded8eb844b999977b0517cbf
+      internalID: -1353983543
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hero_kick_sheet_12
+      name: Hero_punch1_sheet_12
       rect:
         serializedVersion: 2
         x: 0
@@ -371,14 +371,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 938deff2c729a47469078d160f64f557
-      internalID: 102331975
+      spriteID: 262aedd60518d3e459a07b19339d3b10
+      internalID: -853502088
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hero_kick_sheet_13
+      name: Hero_punch1_sheet_13
       rect:
         serializedVersion: 2
         x: 256
@@ -392,14 +392,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: da5c286f0006cbd43aa04aa1c0ed7adc
-      internalID: 1221838482
+      spriteID: ce2812aace7c57b4fb0f01ea02395eca
+      internalID: 486352643
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hero_kick_sheet_14
+      name: Hero_punch1_sheet_14
       rect:
         serializedVersion: 2
         x: 512
@@ -413,14 +413,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d6d00ab8cec90704f88d166bbb00d0ed
-      internalID: 914430573
+      spriteID: 9b4bd538ef1a0784e825727c32a10e73
+      internalID: -119902786
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hero_kick_sheet_15
+      name: Hero_punch1_sheet_15
       rect:
         serializedVersion: 2
         x: 768
@@ -434,14 +434,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8dd58ec9a20ca164c8e972c87a455b4c
-      internalID: 846361673
+      spriteID: 0b7e3fc9d67cfa34382ae7f68173c973
+      internalID: 912194474
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hero_kick_sheet_16
+      name: Hero_punch1_sheet_16
       rect:
         serializedVersion: 2
         x: 1024
@@ -455,8 +455,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1323429cc62638f4986cf7d76198ac89
-      internalID: 401867346
+      spriteID: da5e80da2db7de047984c41a3b63f15f
+      internalID: 1315091099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hero_punch1_sheet_17
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 768
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95c4cd950622f58468a88ccd1dcafac7
+      internalID: -1689148758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hero_punch1_sheet_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 512
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f865280a1060378419e96d149e5946e8
+      internalID: 1378420390
       vertices: []
       indices: 
       edges: []
@@ -472,23 +514,25 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Hero_kick_sheet_0: -1314847956
-      Hero_kick_sheet_1: -1683584271
-      Hero_kick_sheet_10: -638748784
-      Hero_kick_sheet_11: 1451495172
-      Hero_kick_sheet_12: 102331975
-      Hero_kick_sheet_13: 1221838482
-      Hero_kick_sheet_14: 914430573
-      Hero_kick_sheet_15: 846361673
-      Hero_kick_sheet_16: 401867346
-      Hero_kick_sheet_2: 1738973202
-      Hero_kick_sheet_3: -575289340
-      Hero_kick_sheet_4: 1662990323
-      Hero_kick_sheet_5: -54285373
-      Hero_kick_sheet_6: -1254138782
-      Hero_kick_sheet_7: 141083416
-      Hero_kick_sheet_8: -1587789963
-      Hero_kick_sheet_9: -202983622
+      Hero_punch1_sheet_0: -49488409
+      Hero_punch1_sheet_1: 2111408285
+      Hero_punch1_sheet_10: -2012446713
+      Hero_punch1_sheet_11: -1353983543
+      Hero_punch1_sheet_12: -853502088
+      Hero_punch1_sheet_13: 486352643
+      Hero_punch1_sheet_14: -119902786
+      Hero_punch1_sheet_15: 912194474
+      Hero_punch1_sheet_16: 1315091099
+      Hero_punch1_sheet_17: -1689148758
+      Hero_punch1_sheet_18: 1378420390
+      Hero_punch1_sheet_2: -1333427443
+      Hero_punch1_sheet_3: 637451465
+      Hero_punch1_sheet_4: -440911018
+      Hero_punch1_sheet_5: 282657435
+      Hero_punch1_sheet_6: -461223341
+      Hero_punch1_sheet_7: 895610372
+      Hero_punch1_sheet_8: 1479248452
+      Hero_punch1_sheet_9: 873258274
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
