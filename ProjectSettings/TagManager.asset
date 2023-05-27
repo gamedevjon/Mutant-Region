@@ -44,6 +44,9 @@ TagManager:
   - name: Lights
     uniqueID: 2304024149
     locked: 0
+  - name: Foreground
+    uniqueID: 2309461721
+    locked: 0
   - name: Hero
     uniqueID: 3734254605
     locked: 0
