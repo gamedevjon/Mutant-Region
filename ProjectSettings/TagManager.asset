@@ -41,18 +41,18 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Lights
-    uniqueID: 2304024149
-    locked: 0
-  - name: Foreground
-    uniqueID: 2309461721
-    locked: 0
-  - name: Hero
-    uniqueID: 3734254605
+  - name: Background
+    uniqueID: 2797347223
     locked: 0
   - name: Items
     uniqueID: 3068387599
     locked: 0
-  - name: Background
-    uniqueID: 2797347223
+  - name: Hero
+    uniqueID: 3734254605
+    locked: 0
+  - name: Foreground
+    uniqueID: 2309461721
+    locked: 0
+  - name: Lights
+    uniqueID: 2304024149
     locked: 0
