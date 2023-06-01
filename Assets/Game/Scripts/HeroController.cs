@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Hero_Controller : MonoBehaviour
+public class HeroController : MonoBehaviour
 {
     [SerializeField]
     private float _speed = 1.0f;
@@ -10,6 +10,7 @@ public class Hero_Controller : MonoBehaviour
     private Animator _anim;
 
     private int _punch, _kick;
+
 
     private void Start()
     {
@@ -22,23 +23,10 @@ public class Hero_Controller : MonoBehaviour
         Movement();
 
         if (Input.GetKeyDown(KeyCode.RightControl))
-        {
-            _anim.SetTrigger("Punch_"+_punch);
-
-            _punch++;
-
-            if (_punch > 1)
-                _punch = 0;
-        }
+            Punch();
         else if (Input.GetKeyDown(KeyCode.RightAlt))
-        {
-            _anim.SetTrigger("Kick_" + _kick);
-
-            _kick++;
-
-            if (_kick > 1)
-                _kick = 0;
-        }
+            Kick();
+       
     }
 
     void Movement()
@@ -57,4 +45,26 @@ public class Hero_Controller : MonoBehaviour
 
         transform.Translate(direction * _speed * Time.deltaTime, Space.World);
     }
+
+    void Punch()
+    {
+        _anim.SetTrigger("Punch_" + _punch);
+
+        _punch++;
+
+        if (_punch > 1)
+            _punch = 0;
+    }
+
+    void Kick()
+    {
+        _anim.SetTrigger("Kick_" + _kick);
+
+        _kick++;
+
+        if (_kick > 1)
+            _kick = 0;
+    }
+
+   
 }
