@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bf2edee5c58d82540a51f03df9d42094, type: 3}
-  m_Name: 2D Renderer
+  m_Name: Universal Render Pipeline Asset MR
   m_EditorClassIdentifier: 
   k_AssetVersion: 9
   k_AssetPreviousVersion: 9
   m_RendererType: 1
   m_RendererData: {fileID: 0}
   m_RendererDataList:
-  - {fileID: 11400000, guid: 014bda5b13230864da9b2ce97f205361, type: 2}
+  - {fileID: 11400000, guid: 9c7106ce334520c419ae31d83fda7e17, type: 2}
   m_DefaultRendererIndex: 0
   m_RequireDepthTexture: 0
   m_RequireOpaqueTexture: 0
@@ -35,7 +35,7 @@ MonoBehaviour:
   m_MainLightShadowmapResolution: 2048
   m_AdditionalLightsRenderingMode: 1
   m_AdditionalLightsPerObjectLimit: 4
-  m_AdditionalLightShadowsSupported: 0
+  m_AdditionalLightShadowsSupported: 1
   m_AdditionalLightsShadowmapResolution: 2048
   m_AdditionalLightsShadowResolutionTierLow: 256
   m_AdditionalLightsShadowResolutionTierMedium: 512
