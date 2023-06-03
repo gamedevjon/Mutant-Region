@@ -7,6 +7,8 @@ public class HeroController : MonoBehaviour
     [SerializeField]
     private float _speed = 1.0f;
     [SerializeField]
+    private float _rotationSpeed = 360f;
+    [SerializeField]
     private Animator _anim;
 
     private int _punch, _kick;
@@ -41,7 +43,11 @@ public class HeroController : MonoBehaviour
         float angle = Mathf.Atan2(v, h) * Mathf.Rad2Deg;
 
         if (h != 0 || v != 0)
-            transform.rotation = Quaternion.Euler(0f, 0f, angle + 90f);
+        {
+            var targetRot = Quaternion.Euler(0f, 0f, angle + 90f);
+            transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRot, _rotationSpeed * Time.deltaTime);
+
+        }
 
         transform.Translate(direction * _speed * Time.deltaTime, Space.World);
     }
