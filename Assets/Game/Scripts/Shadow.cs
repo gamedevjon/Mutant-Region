@@ -24,7 +24,8 @@ public class Shadow : MonoBehaviour
     // Update is called once per frame
     void LateUpdate()
     {
-        _shadowSprite.transform.localPosition = _offSet;
+        _shadowSprite.transform.localPosition = Quaternion.Inverse(_parentSprite.transform.rotation) * -(_offSet);
+        
 
         if (_shadowSprite.sprite != _parentSprite.sprite)
             _shadowSprite.sprite = _parentSprite.sprite;
