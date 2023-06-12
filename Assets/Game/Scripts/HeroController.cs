@@ -13,6 +13,8 @@ public class HeroController : MonoBehaviour
 
     private int _punch, _kick;
 
+    private bool _holdingBar = false;
+
     [SerializeField]
     private List<Item> _inventory = new List<Item>();
 
@@ -51,7 +53,7 @@ public class HeroController : MonoBehaviour
 
         var direction = new Vector2(h, v);
 
-        _anim.SetFloat("Move", Mathf.Abs(direction.magnitude));
+        _anim.SetFloat(_holdingBar == true ? "MoveWithBar" : "Move", Mathf.Abs(direction.magnitude));
 
         float angle = Mathf.Atan2(v, h) * Mathf.Rad2Deg;
 
@@ -95,5 +97,8 @@ public class HeroController : MonoBehaviour
             var item = ItemDatabase.Instance.GetItem(itemID);
             _inventory.Add(item);
         }
+
+        //equip bar
+        _holdingBar = true;
     }
 }
