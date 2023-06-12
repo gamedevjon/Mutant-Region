@@ -13,6 +13,19 @@ public class HeroController : MonoBehaviour
 
     private int _punch, _kick;
 
+    [SerializeField]
+    private List<Item> _inventory = new List<Item>();
+
+    private void OnEnable()
+    {
+        ItemBehavior.onCollectItem += ItemBehavior_onCollectItem;
+    }
+
+    private void OnDisable()
+    {
+        ItemBehavior.onCollectItem -= ItemBehavior_onCollectItem;
+    }
+
 
     private void Start()
     {
@@ -72,5 +85,15 @@ public class HeroController : MonoBehaviour
             _kick = 0;
     }
 
-   
+    private void ItemBehavior_onCollectItem(int itemID)
+    {
+        //play animation
+        _anim.SetTrigger("Pickup_Floor");
+        //verify valid item
+        if (ItemDatabase.Instance.VerifyItem(itemID) == true)
+        {
+            var item = ItemDatabase.Instance.GetItem(itemID);
+            _inventory.Add(item);
+        }
+    }
 }
