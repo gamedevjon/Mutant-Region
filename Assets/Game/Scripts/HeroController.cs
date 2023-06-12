@@ -53,7 +53,7 @@ public class HeroController : MonoBehaviour
 
         var direction = new Vector2(h, v);
 
-        _anim.SetFloat(_holdingBar == true ? "MoveWithBar" : "Move", Mathf.Abs(direction.magnitude));
+        _anim.SetFloat(_holdingBar == false ? "Move" : "MoveWithBar", Mathf.Abs(direction.magnitude));
 
         float angle = Mathf.Atan2(v, h) * Mathf.Rad2Deg;
 
@@ -69,7 +69,7 @@ public class HeroController : MonoBehaviour
 
     void Punch()
     {
-        _anim.SetTrigger("Punch_" + _punch);
+        _anim.SetTrigger(_holdingBar == false ? "Punch_" + _punch : "Punch_With_Bar_" + _punch );
 
         _punch++;
 
