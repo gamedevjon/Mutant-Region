@@ -92,10 +92,16 @@ public class HeroController : MonoBehaviour
         //play animation
         _anim.SetTrigger("Pickup_Floor");
         //verify valid item
+        Debug.Log("Picked Up: " + itemID);
+
         if (ItemDatabase.Instance.VerifyItem(itemID) == true)
         {
             var item = ItemDatabase.Instance.GetItem(itemID);
             _inventory.Add(item);
+            Debug.Log("Added Item to Inventory: " + itemID);
+
+            //update UI to display item at slot 0
+            RadialMenuController.Instance.UpdateInventoryDisplay(item.GetID);
         }
 
         //equip bar

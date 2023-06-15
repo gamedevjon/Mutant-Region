@@ -11,8 +11,6 @@ public class Item
     private string _name;
     [SerializeField]
     private string _description;
-    [SerializeField]
-    private Sprite _icon;
 
     public int GetID => _id;
    
