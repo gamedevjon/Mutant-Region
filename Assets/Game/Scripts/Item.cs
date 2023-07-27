@@ -13,5 +13,6 @@ public class Item
     private string _description;
 
     public int GetID => _id;
+    public string GetName => _name;
    
 }

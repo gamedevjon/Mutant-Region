@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 
 public class HeroController : MonoBehaviour
 {
@@ -21,7 +22,9 @@ public class HeroController : MonoBehaviour
     private void OnEnable()
     {
         ItemBehavior.onCollectItem += ItemBehavior_onCollectItem;
+        RadialMenuController.onSelectItem += RadialMenuController_onSelectItem;
     }
+
 
     private void OnDisable()
     {
@@ -104,7 +107,27 @@ public class HeroController : MonoBehaviour
             RadialMenuController.Instance.UpdateInventoryDisplay(item.GetID);
         }
 
-        //equip bar
-        _holdingBar = true;
+        //equip bar for testing
+        //_holdingBar = true;
+    }
+    private void RadialMenuController_onSelectItem(int itemID)
+    {
+        //check if we have in our inventory, itemID
+        if (ItemDatabase.Instance.VerifyItem(itemID) == true)
+        {
+            bool hasItem = _inventory.Contains(ItemDatabase.Instance.GetItem(itemID));
+
+            if (hasItem == true)
+            {
+                switch(itemID)
+                {
+                    case 0: //unknown
+                        break;
+                    case 6: // Bar
+                        _holdingBar = !_holdingBar;
+                        break;
+                }
+            }
+        }
     }
 }

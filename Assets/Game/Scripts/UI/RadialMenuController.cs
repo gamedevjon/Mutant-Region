@@ -4,6 +4,8 @@ using UnityEditor;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using System;
+using static UnityEditor.Progress;
 
 public class RadialMenuController : MonoBehaviour
 {
@@ -24,6 +26,12 @@ public class RadialMenuController : MonoBehaviour
     [SerializeField]
     private Transform _selectImage;
     [SerializeField]
+    private Image _selectImageComponent;
+    [SerializeField]
+    private Sprite _selectImageIconDefault;
+    [SerializeField]
+    private Sprite _selectImageIconRed;
+    [SerializeField]
     private TMP_Text _text;
     [SerializeField]
     private bool _menuActive = false;
@@ -33,6 +41,8 @@ public class RadialMenuController : MonoBehaviour
 
     [SerializeField]
     private Slot[] _slots;
+
+    public static event Action<int> onSelectItem;
 
 
     private void Awake()
@@ -80,11 +90,25 @@ public class RadialMenuController : MonoBehaviour
                     {
                         _selectImage.eulerAngles = new Vector3(0, 0, i - 90);
                         //_text.text = "" + _slots[_activeSlot].sprite.name;
-
+                        //get item name
+                        if (ItemDatabase.Instance.VerifyItem(_activeSlot))
+                        {
+                            var item = ItemDatabase.Instance.GetItem(_activeSlot);
+                            _text.text = item.GetName;
+                        }
+                            
+                        //click inventory icon
                         if (Input.GetMouseButtonDown(0))
                         {
                             Debug.Log("Selected " + _activeSlot);
+                            if (_slots[_activeSlot].Active() == true)
+                                onSelectItem?.Invoke(_activeSlot);
+                            else
+                                _selectImageComponent.sprite = _selectImageIconRed;    
                         }
+
+                        if (Input.GetMouseButtonUp(0))
+                            _selectImageComponent.sprite = _selectImageIconDefault;
                     }
                     _activeSlot++;
                 }
